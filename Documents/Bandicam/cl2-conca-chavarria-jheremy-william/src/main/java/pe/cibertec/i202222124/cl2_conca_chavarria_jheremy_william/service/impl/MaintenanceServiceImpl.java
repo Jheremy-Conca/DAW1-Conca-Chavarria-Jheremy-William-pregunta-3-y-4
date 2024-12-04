@@ -5,9 +5,9 @@ import org.springframework.stereotype.Service;
 import pe.cibertec.i202222124.cl2_conca_chavarria_jheremy_william.dto.FilmDetailDto;
 import pe.cibertec.i202222124.cl2_conca_chavarria_jheremy_william.dto.FilmDto;
 import pe.cibertec.i202222124.cl2_conca_chavarria_jheremy_william.entity.Film;
-import pe.cibertec.i202222124.cl2_conca_chavarria_jheremy_william.entity.FilmCategory;
 import pe.cibertec.i202222124.cl2_conca_chavarria_jheremy_william.entity.Language;
 import pe.cibertec.i202222124.cl2_conca_chavarria_jheremy_william.repository.FilmRepository;
+import pe.cibertec.i202222124.cl2_conca_chavarria_jheremy_william.repository.LanguageRepository;
 import pe.cibertec.i202222124.cl2_conca_chavarria_jheremy_william.service.MaintenanceService;
 
 import java.time.Instant;
@@ -23,7 +23,7 @@ public class MaintenanceServiceImpl implements MaintenanceService {
     @Autowired
     FilmRepository filmRepository;
     @Autowired
-    private pe.cibertec.i202222124.cl2_conca_chavarria_jheremy_william.repository.languageRepository languageRepository;
+    private LanguageRepository languageRepository;
 
     @Override
     public List<FilmDto> getAllFilms() {
